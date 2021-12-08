@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;   
+ }
+ body {
+   min-width: 800px;
+   position: relative;
+   background-image:url(https://cdn.britannica.com/s:800x450,c:crop/09/214809-138-8B05308C/Dodo-extinct-bird-island-Indian-Ocean-human-induced-extinction.jpg);
+   background-position: center;
+   background-color: teal;
+  }
+
+.Header {
+  position:relative;
+  height: 60px;
+  width: 100%;
+}
+
+ .bg_colors{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 100% 100%;
+  height: 60px;
+}
+
+ .Header > h1 {
+   position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+}
+
+.tasklist {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  width: 100%;
+  min-height: 10px;
+  height: auto;
+  margin: 10px 0px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.task {
+  width: 96%;
+  height: 120px;
+  position: relative;
+  background-color: 0;
+  left: 2%;
+  margin-right: 2%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.textfield {
+  width: 65%;
+  left: 10px;
+  height: 80%;
+  top: 5%;
+  position:relative;
+}
+
+
+.text {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height: 30%;
+  width: 100%;
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.save, .close {
+  font-weight: bold;
+  font-style: oblique;
+  position: absolute;
+  top: 10px;
+  width: 98px;
+  height: 35px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.save > p, .close > p {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+
+.close {
+  background-color: rgb(189, 17, 37);
+  right: 10px;
+  color:white;
+
+}
+
+.save {
+  background-color: rgb(255, 204,0);
+  right: 130px;
+  color: black;
+}
+
+.save:hover, .close:hover, .c1:hover, .create:hover {
+  cursor: pointer;
+}
+
+.c1 {
+  background-color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 150px;
+  height: 24px;
+  border-radius: 40px;
+}
+
+.check {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translate(0, -50%);
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.check_img {
+  position: absolute;
+  transform: translate(0, -50%);
+  left: 10px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.buttonholder {
+  width: 96%;
+  height: 60px;
+  position: relative;
+  background-color: 0;
+  border: 1px solid black;
+  left: 2%;
+  margin-right: 2%;
+  order: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+.filter_b, .create, .remove_all {
+  width: 100px;
+  height: 40px;
+  bottom: 0px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  outline: none;
+  background-color: lightgrey;
+  transition: 0.3s;
+}
+.filter_b:hover, .create:hover, .remove_all:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+.filter_b, .create {
+  color: black;
+}
+.filter_b:hover, .create:hover {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.remove_all {
+  color: salmon;
+}
+
+.skret1, .skret2 {
+  position: absolute;
+  transform: translate(0, -50%);
+  right: 180px;
+  top: 70%;
+  height: auto;
+}
+
+.skret1{
+  width: 100px;
+}
+
+.skret2{
+  width: 60px;
+}
+
+.popup_filter {
+  visibility: hidden;
+  position: absolute;
+  bottom: -160px;
+  right: 140px;
+  width: 150px;
+  height: auto;
+  background-color: greenyellow;
+  color:black;
+  display: flex;
+  flex: column;
+  gap: 5px;
+  flex-wrap: wrap;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 7px;
+ }
+
+.filter_button {
+  width: 100%;
+  height: 40px;
+} 
+
+
+

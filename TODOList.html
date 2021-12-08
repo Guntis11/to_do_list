@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final task WEB DEW School</title>
+    <link rel = "stylesheet" href = "D:\School\FINALPROJECT\TODOList.css">
+    
+</head>
+<body>
+  <div class = "Header">
+    <h1>TO DO List</h1>
+    <div class = "bg_colors"></div>
+  </div>
+  <div class = "a1"></div>
+  <div class = "buttonholder">
+    <button type="button" class = "create" onclick = "create()" >ADD TASK</button>
+    
+    <button type="button" class  = "filter_b" onclick="task.show_field()">FILTER</button>
+    <button type="button" class = "remove_all" onclick = "task.remove.all()">REMOVE ALL</button>
+    
+    <popup class="popup_filter" id = "show_filter">
+      <button class="filter_button" type="button" onclick = "task.filter('')">Clear filter</button>
+      <button class="filter_button" type="button" onclick = "task.filter(0)">Checked</button>
+      <button class="filter_button" type="button" onclick = "task.filter(1)">Unchecked</button>
+    </popup>
+  </div>
+  <div class = "tasklist" id = "tasklist">
+
+    
+    </div>
+    
+  </div>
+  
+  
+  
+  <script src = "D:\School\FINALPROJECT\TODOlist.js"></script>
+</body>
+</html>
